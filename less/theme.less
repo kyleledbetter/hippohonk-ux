@@ -7,11 +7,20 @@
 	position: relative;
 
 	.source {
-		width: 100%;
-		height: auto;
+		position: fixed;
+		top: -15px;
+		right: -15px;
+		left: -15px;
+		bottom: -15px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		min-width: 110%;
+		min-height: 110%;
+		z-index: -2;
 	}
 	.jumbotron {
-		position: absolute;
 		width: 100%;
 		padding-top: 6%;
 		background-color: transparent;
@@ -138,14 +147,14 @@ a:hover {
 	position: absolute;
 	font-size: 1.8em;
 	top: 14px;
-	right: 15px;
+	right: 20px;
 	z-index: 300;
-	.opacity (0.25);
+	.opacity (0.55);
 
 	&:hover {
 		text-decoration: none;
 		color: #FFF;
-		.opacity (0.75);
+		.opacity (0.95);
 	}
 }
 #panel {
@@ -154,36 +163,38 @@ a:hover {
 }
 /* Details BG Blurry */
 .blur {
-	filter:blur(10px) brightness(50%);
-	-o-filter:blur(10px) brightness(50%);
-	-ms-filter:blur(10px) brightness(50%);
-	-moz-filter:blur(10px) brightness(50%);
-	-webkit-filter:blur(10px) brightness(50%);
+	filter:blur(10px);
+	-o-filter:blur(10px);
+	-ms-filter:blur(10px);
+	-moz-filter:blur(10px);
+	-webkit-filter:blur(10px);
 
 	position: fixed;
 	z-index: -1;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
+	top: -15px;
+	right: -15px;
+	left: -15px;
+	bottom: -15px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	min-width: 110%;
+	min-height: 110%;
 }
 footer {
-	background-color: @brand-danger;
 	font-family: 'Roboto Slab', serif;
 	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
 	margin-top: 40px;
-	color: lighten(@brand-danger, 30%);
+	margin-bottom: 40px;
+	color: lighten(@brand-danger, 5%);
 
 	a {
-		color: #FFF;
+		color: @brand-danger;
+		padding: 0 3px;
 		&:hover {
-			color: lighten(@brand-danger, 30%);
+			color: lighten(@brand-danger, 35%);
+			background-color: @brand-danger;
 		}
 	}
 }
@@ -230,8 +241,29 @@ footer {
 	}
 
 }
-@media (max-width: @screen-sm-min) {
+@media (max-width: @screen-sm-max) {
+	h1.media-heading {
+		font-size: 16px;
+	}
+	.alert-sm {
+		padding: 3px;
+		min-width: 30px;
 
+		.h2 {
+			font-size: 14px;
+		}
+	}
+	.hidden-phone {
+		display: none;
+	}
+}
+@media (min-width: @screen-md-min) {
+	/* Alerts */
+	.alert-sm {
+		padding: 5px;
+		margin-bottom: 0;
+		min-width: 50px;
+	}
 }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	.jumbotron {
@@ -286,12 +318,6 @@ footer {
 .text-medium {
 	font-size: 75%;
 	line-height: 1;
-}
-/* Alerts */
-.alert-sm {
-	padding: 5px;
-	margin-bottom: 0;
-	min-width: 50px;
 }
 /* Panel headings */
 .panel-danger {

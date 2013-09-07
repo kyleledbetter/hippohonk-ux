@@ -34,7 +34,19 @@
  
         <div class="st-content"><!-- this is the wrapper for the content -->
             <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-                <section class="video hidden-xs collapse-video  collapse in">
+              <header id="header">
+                  <div id="st-trigger-effects" class="container">
+                    <ul class="nav nav-pills pull-right hidden-xs">
+                      <li class="active"><a href="#">ACL 2013</a></li>
+                      <li><a href="#">SXSW 2013</a></li>
+                      <li><a href="#">FunFunFun 2013</a></li>
+                      <li><a href="#">Honkers</a></li>
+                    </ul>
+                    <button data-effect="st-effect-3" class="btn btn-xs btn-danger visible-xs pull-left"><span aria-hidden="true" class="icon-reorder"></span></button>
+                    <a href="index.html" class="logo">hippohonk</a> <a href="/" class="about text-muted" title="About Hippohonk">wtf?</a>
+                  </div>
+                </header>
+                <section class="video hidden-xs collapse-video collapse fade in">
                   <a class="close-video" title="Minimize" data-toggle="collapse" href=".collapse-video" aria-hidden="true"><span aria-hidden="true" class="icon-sort"></span></a>
                   <div class="jumbotron collapse-video collapse in">
                     <div class="container">
@@ -62,18 +74,7 @@
                   </video>
 
                 </section>
-                <header id="header">
-                  <div id="st-trigger-effects" class="container">
-                    <ul class="nav nav-pills pull-right hidden-xs">
-                      <li class="active"><a href="#">ACL 2013</a></li>
-                      <li><a href="#">SXSW 2013</a></li>
-                      <li><a href="#">FunFunFun 2013</a></li>
-                      <li><a href="#">Honkers</a></li>
-                    </ul>
-                    <button data-effect="st-effect-3" class="btn btn-xs btn-danger visible-xs pull-left"><span aria-hidden="true" class="icon-reorder"></span></button>
-                    <a href="index.html" class="logo">hippohonk</a> <a href="/" class="about text-muted" title="About Hippohonk">wtf?</a>
-                  </div>
-                </header>
+                
                 <section class="content container">
                   <div id="panel" class="panel panel-danger">
                     <!-- begin heading -->
@@ -507,8 +508,11 @@
                 </section>
                 <footer>
                   <div class="container">
+                    <h4>
+                      582 honktastic reviews and counting
+                    </h4>
                     <p>
-                      driven my music obsession (and programming) by <a href="#">jason goodrich</a>.
+                      driven by the music obsession (and programming) by <a href="#">jason goodrich</a>.
                     </p>
                     <p>
                       rails dev by <a href="#">ken ledbetter</a>.
@@ -516,10 +520,6 @@
                     <p>
                       design &amp; ux by <a href="http://kyleledbetter.com">kyle ledbetter</a>.
                     </p>
-                    <div class="h4">
-                      <img src="images/logo-menu.png" width="40" alt="Honk Dat" /> 
-                      582 honktastic reviews and counting
-                    </div>
                   </div>
                 </footer>
             </div><!-- /st-content-inner -->
@@ -534,10 +534,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/sidebarEffects.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/waypoints-sticky.min.js"></script>
-    <script>
-      $('#panel').waypoint('sticky');
-    </script>
+
   </body>
 </html>
