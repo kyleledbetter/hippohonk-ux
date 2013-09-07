@@ -46,8 +46,8 @@
                     <a href="index.html" class="logo">hippohonk</a> <a href="/" class="about text-muted" title="About Hippohonk">wtf?</a>
                   </div>
                 </header>
-                <section class="video hidden-xs collapse-video collapse fade in">
-                  <a class="close-video" title="Minimize" data-toggle="collapse" href=".collapse-video" aria-hidden="true"><span aria-hidden="true" class="icon-sort"></span></a>
+                <section class="video hidden-xs collapse-video collapse in">
+                  <a class="close-video has-tooltip" data-placement="left" title="Minimize Header" data-toggle="collapse" href=".collapse-video" aria-hidden="true"><span aria-hidden="true" class="icon-sort"></span></a>
                   <div class="jumbotron collapse-video collapse in">
                     <div class="container">
                       <img src="images/hippohonk.png" class="honker" alt="HONK!" width="30%" />
@@ -534,6 +534,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/sidebarEffects.js"></script>
-
+    <script>
+    $('.has-tooltip').tooltip()
+    </script>
   </body>
 </html>
