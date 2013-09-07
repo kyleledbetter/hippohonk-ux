@@ -4410,10 +4410,10 @@ body.modal-open,
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   text-decoration: none;
-  background-color: #000000;
+  background-color: #ffffff;
   border-radius: 4px;
 }
 .tooltip-arrow {
@@ -4428,52 +4428,52 @@ body.modal-open,
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #ffffff;
 }
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
   left: 5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #ffffff;
 }
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   right: 5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #ffffff;
 }
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000000;
+  border-right-color: #ffffff;
 }
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000000;
+  border-left-color: #ffffff;
 }
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #ffffff;
 }
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
   left: 5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #ffffff;
 }
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
   right: 5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #ffffff;
 }
 .popover {
   position: absolute;
@@ -5445,17 +5445,38 @@ a:hover {
   width: 240px;
   float: left;
   overflow: hidden;
-  -webkit-transition: text-indent 0.5s ease-in;
-  transition: text-indent 0.5s ease-in;
 }
 .logo:hover {
-  text-decoration: none;
-  background-position: 0 -47px;
-  text-indent: 250px;
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: pulsate2 3s ease-out;
+  -moz-animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    color: #ea524d;
+  }
+  50% {
+    color: #1563ea;
+  }
+  100% {
+    color: #ea524d;
+  }
+}
+@-moz-keyframes pulsate2 {
+  0% {
+    color: #ea524d;
+  }
+  50% {
+    color: #1563ea;
+  }
+  100% {
+    color: #ea524d;
+  }
 }
 .close-video {
   color: #FFF;
-  position: absolute;
+  position: fixed;
   font-size: 1.8em;
   top: 14px;
   right: 20px;
