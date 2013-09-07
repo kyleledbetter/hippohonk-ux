@@ -55,7 +55,7 @@
                       <h2>by music fanatics just like you.</h2>
                       <div class="row">
                         <div class="col-sm-offset-3 col-sm-3 col-md-offset-0 col-md-12">
-                          <a href="#header" class="btn btn-jumbo btn-lg">Check it</a>
+                          <a href="#panel" class="btn btn-jumbo btn-lg">Check it</a>
                         </div>
                         <div class="col-sm-3 col-md-12">
                           <ul class="list-inline">
@@ -505,6 +505,7 @@
                     </div>
                     <!-- end list -->
                   </div>
+                  <a href="#header" class="back-top" title="Back to top"><span aria-hidden="true" class="icon-angle-up"></span></a>
                 </section>
                 <footer>
                   <div class="container">
@@ -534,8 +535,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/sidebarEffects.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
     <script>
-    $('.has-tooltip').tooltip()
+      $('.has-tooltip').tooltip();
+      $('a').smoothScroll();
     </script>
   </body>
 </html>

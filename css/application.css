@@ -5490,6 +5490,22 @@ a:hover {
   opacity: 0.95;
   filter: alpha(opacity=95);
 }
+.back-top {
+  color: #FFF;
+  position: fixed;
+  font-size: 1.8em;
+  bottom: 14px;
+  right: 20px;
+  z-index: 300;
+  opacity: 0.55;
+  filter: alpha(opacity=55.00000000000001);
+}
+.back-top:hover {
+  text-decoration: none;
+  color: #FFF;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+}
 #panel {
   min-height: 500px;
   opacity: 0.9;
