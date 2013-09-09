@@ -5360,7 +5360,6 @@ header {
   z-index: 100;
   position: relative;
   padding: 10px 0;
-  margin-top: 20px;
   -webkit-transition: background-color 0.5s ease-in;
   transition: background-color 0.5s ease-in;
 }
@@ -5511,6 +5510,10 @@ footer a:hover {
     background-position: 0 -22px;
     text-indent: 120px;
   }
+  #panel {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
 }
 @media (min-width: 768px) {
   .honker {
@@ -5569,6 +5572,11 @@ footer a:hover {
     padding: 5px;
     margin-bottom: 0;
     min-width: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .video .source {
+    min-width: 111%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5665,6 +5673,9 @@ a.list-group-item:hover .label {
 @media (min-width: 992px) {
   #panel.stuck > .panel-heading {
     width: 938px;
+  }
+  header {
+    margin-top: 20px;
   }
 }
 @media (min-width: 1200px) {

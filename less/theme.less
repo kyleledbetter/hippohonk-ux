@@ -93,7 +93,6 @@ header {
 	z-index: 100;
 	position: relative;
 	padding: 10px 0;
-	margin-top: 20px;
 
 	.transition (background-color 0.5s ease-in);
 
@@ -233,6 +232,10 @@ footer {
 			text-indent: 120px;
 		}
 	}
+	#panel {
+		margin-right: -8px;
+		margin-left: -8px;
+	}
 }
 @media (min-width: @screen-sm-min) {
 
@@ -285,6 +288,13 @@ footer {
 		padding: 5px;
 		margin-bottom: 0;
 		min-width: 50px;
+	}
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	.video {
+		.source {
+			min-width: 111%;
+		}
 	}
 }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
@@ -402,6 +412,9 @@ a.list-group-item {
 @media (min-width: @screen-md) {
   #panel.stuck > .panel-heading {
 		width: @container-desktop - 32;
+	}
+	header {
+		margin-top: 20px;
 	}
 }
 @media (min-width: @screen-lg-desktop) {
