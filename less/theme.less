@@ -11,7 +11,7 @@
 		top: 0;
 		width: 100%;
 		z-index: -2;
-		border-bottom: 5px solid #ededed;
+		border-bottom: 2px solid #333;
 	}
 	.jumbotron {
 		width: 100%;
@@ -180,6 +180,7 @@ a:hover {
 }
 #panel {
 	min-height: 500px;
+	.box-shadow (~"-7px -7px 1px rgba(0, 0, 0, 0.05), 7px 7px 1px rgba(0, 0, 0, 0.05)");
 }
 /* Details BG Blurry */
 .blur {
@@ -381,6 +382,9 @@ a.list-group-item {
 	&:hover .text-muted,
 	&:hover small {
 		color: #FFF;
+	}
+	&:hover .label {
+		background-color: #FFF;
 	}
 }
 
